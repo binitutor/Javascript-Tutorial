@@ -1,0 +1,87 @@
+html {
+	height: 100%;
+}
+
+body {
+	background: url('../img/habesha_store_bg.png') no-repeat center center fixed;
+	-webkit-background-size:  cover;
+	-moz-background-size:  cover;
+	-o-background-size:  cover;
+	background-size: cover;
+	font-size: 100%;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	min-height: 100%;
+}
+
+#logo {
+	width: 278px;
+	height: 112px;
+	margin: 0 auto;
+	padding-top: 40px;
+	background: url('../img/habesha_store_logo.png') no-repeat bottom center;
+}
+
+#content {
+	background-color: #fff;
+	border: 3px double #333;
+	border-radius: 10px;
+	color: #333;
+	display: inline-block;
+	padding: 30px 50px;
+	margin: 20px auto 50px auto;
+	max-width: 880px;
+	min-height: 4em;
+	overflow: auto;
+	text-align: center;
+}
+
+.action {
+	background-color: #f84c53;
+	color: #fff;
+	width:  auto;
+	height: 1em;
+	padding: 0.5em 0.75em;
+	float: right;
+	position: relative;
+	top:  1.3em;
+	right: -2.3em;
+}
+
+a {
+	color: #e3bb5a;
+	text-decoration: none;
+}
+
+.message {
+	font-weight: bold;
+	line-height: 1.5em;
+	height: 2em;
+	display: block;
+	clear: left;
+	min-width: 10em;
+}
+
+.message span {
+	font-weight: normal;
+}
+
+table {
+	margin: 20px 100px 0 100px;
+}
+
+tr td:first-child {
+	font-weight: bold;
+	padding-right: 20px;
+}
+
+
+
+
+
+
+
+
+
+
