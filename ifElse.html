@@ -1,0 +1,50 @@
+<html>
+	<head>
+		<title>የውሳኔ መንገዶች</title>
+	</head>
+	<body>
+		<input type="number" id="age" placeholder="እድሜህን አስገባ">
+		<button onclick="sendStudentAge()">እድሜህን አስገባ</button>
+
+		<h1 id="output"></h1>
+		<script>
+			// #1, if ... statement
+			// program asks for student age and decides if he is qualified to take test
+			var studentAge;
+			var decision;
+
+			function sendStudentAge() {
+				// receive age
+				studentAge = document.getElementById('age').value;
+
+				// decide
+				if(studentAge > 70) {
+					decision = "እድሜዎት ገፍቷል፤ ሹፌር ይቅጠሩ።";
+				} else if(studentAge > 18){
+					decision = "የመኪና መንዳት ፈተና ለመውሰድ ብቁ ነህ።";
+				} else {
+					decision = "የመኪና መንዳት ፈተና ለመውሰድ ብቁ አይደለህም!";
+				}
+
+				// output decision
+				document.getElementById('output').textContent = decision;
+			}
+
+		</script>
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

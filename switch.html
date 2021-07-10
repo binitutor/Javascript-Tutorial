@@ -1,0 +1,66 @@
+<html>
+	<head>
+		<title>የውሳኔ መንገዶች</title>
+	</head>
+	<body>
+		<h1 id="output"></h1>
+
+		<script>
+			// switch
+
+			var today = new Date(); // created a date object
+			// var todayNum = today.getDay(); // get the date number, 0 ... 6, sunday ... saturday
+
+			var todayNum = 0; // custom date num
+			var todayString; // string to capture date name
+
+			// we want to output the name of the day usign switch
+			// 7 choices!!!
+			switch(todayNum) {
+				case 0:
+					todayString = "እሑድ";
+					break;
+				case 1:
+					todayString = "ሰኞ";
+					break;
+				case 2:
+					todayString = "ማክሰኞ";
+					break;
+				case 3:
+					todayString = "ረቡዕ";
+					break;
+				case 4:
+					todayString = "ሐሙስ";
+					break;
+				case 5:
+					todayString = "አርብ";
+					break;
+				case 6:
+					todayString = "ቅዳሜ";
+					break;
+				default: // if all fails
+					todayString = "የቀኑ ዋጋ ተሳስቷል!!";
+					break;
+			}
+
+			// output
+			document.getElementById('output').textContent = "ዛሬ: " + todayString;
+			
+		</script>
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
