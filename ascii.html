@@ -1,0 +1,30 @@
+<html>
+	<head>
+		<title>ASCII code</title>
+	</head>
+	<body>
+		<input type="text" size="40" onkeypress="sendKeyCode(event)">
+		<h1 id="output"></h1>
+		<script>
+			function sendKeyCode(event){
+				var keyCode = event.which || event.keyCode;
+				document.getElementById('output').textContent = "Key Code: " + keyCode;
+			}
+		</script>
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
