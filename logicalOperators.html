@@ -1,0 +1,60 @@
+<html>
+	<head>
+		<title>የጥምረት መንገዶች</title>
+	</head>
+	<body>
+		<h1 id="output"></h1>
+
+		<script>
+			// AND &&
+			var x = 10;
+			var y = 20;
+
+			// x < y
+			// x/y < 1
+			// AND is true when both options are true
+
+			if( (x/y < 0.4) && (x < y) ){
+				result = "correct!";
+			} else {
+				result = "incorrect!";
+			}
+
+			document.write('<h1>' + result + '</h1>');
+
+			// OR
+			if( (x/y < 0.4) || (x > y) ){
+				result = "correct!";
+			} else {
+				result = "incorrect!";
+			}
+
+			document.write('<h1>' + result + '</h1>');
+
+			// NOT , opposite
+			if( !(x > y) ){
+				result = "correct!";
+			} else {
+				result = "incorrect!";
+			}
+
+			document.write('<h1>' + result + '</h1>');
+
+		</script>
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
