@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>የመንጃ ፈቃድ ፈተና</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<body>
+	<div class="container">
+		<div class="container-header">
+			<h1> 
+				<span>
+					<i class="fa fa-car" aria-hidden="true"></i>
+					የመኪና
+				</span> 
+				መንጃ ፈቃድ ፈተና
+			</h1>
+		</div>
+
+		<div class="content" id="question_header">
+			<p>ወደመኪና መንጃ ፈቃድ ፈተና እንኳን በደህና መጡ። ፈተናውን ከመውሰድዎ በፊት የሚከተሉትን መረጃዎች ያስገቡ።</p>
+
+			<ol>
+				<li>ሙሉ ስም (full name)</li>
+				<li>ጾታ (gender)</li>
+				<li>እድሜ (age)</li>
+				<li>የትውልድ ሃገር (nationality)</li>
+			</ol>
+
+		</div>
+
+		<button id="myBtn" class="btn">መረጃውን ያስገቡ <i class="fas fa-arrow-right"></i></button>
+	</div>
+
+	<!-- modal -->
+	<div id="myModal" class="modal">
+		<div class="modal-content">
+			<div class="modal-header">
+				<span class="close">&times;</span>
+				<h2>መረጃውን ያስገቡ</h2>
+			</div>
+
+			<div class="modal-body">
+				<form>
+					<div id="form_div">
+						<div id="form_left">
+							ሙሉ ስም (full name)<br>
+							ጾታ (gender)<br>
+							እድሜ (age)<br>
+							የትውልድ ሃገር (nationality)<br>
+						</div>
+
+						<div id="form_right">
+							<input type="text" id="name" placeholder="ሙሉ ስም ...">
+
+							<select id="gender">ጾታ
+								<option value=""></option>
+								<option value="ወንድ">ወንድ</option>
+								<option value="ሴት">ሴት</option>
+							</select>
+
+							
+							<div class="slide_container">
+								<input type="range" id="age" min="16" max="75" value="24" class="slider">
+								<span id="ageRange"></span>
+							</div>
+
+							<input type="text" id="nationality" placeholder="የትውልድ ሃገር ...">
+						</div>
+
+						<button class="btn" onclick="sendStudentInfo(event)">መረጃውን ያስገቡ</button>
+					</div>
+				</form>
+			</div>
+
+			<div class="modal-footer">
+				<p>ወደመኪና መንጃ ፈቃድ ፈተና እንኳን በደህና መጡ። ፈተናውን ከመውሰድዎ በፊት የሚከተሉትን መረጃዎች ያስገቡ።</p>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
